@@ -14,7 +14,7 @@ def main():
                 else:
                     return print(f"{args[0]}: not found")
             case "echo":
-                print(" ".join(args))
+                print("$" + " ".join(args))
             case "exit":
                 sys.exit(int(args[0]) if args else 0)
             case _:
