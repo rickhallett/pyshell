@@ -7,12 +7,12 @@ def main():
         command, *args = user_input.split(" ")
 
         match command:
-            case "type":
-                builtins = ["type", "echo", "exit"]
-                if args[0] in builtins:
-                    return print(f"{args[0]} is a shell builtin")
-                else:
-                    return print(f"{args[0]}: not found")
+            # case "type":
+            #     builtins = ["type", "echo", "exit"]
+            #     if args[0] in builtins:
+            #         return print(f"{args[0]} is a shell builtin")
+            #     else:
+            #         return print(f"{args[0]}: not found")
             case "echo":
                 print(" ".join(args))
             case "exit":
